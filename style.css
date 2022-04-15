@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    /*去除链接下划线*/
+    color: #333;
+}
+
+.tag{
+
+}
+
+.layout{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body{
+    font: 16px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+    color: #333;
+}
+
+.wrapper{
+    background-color: #ececec;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 40px;
+}
+
+.aside{
+    float: left;
+    width: 280px;
+}
+
+.aside .user{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.aside .user::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #d6d6d6;
+    border-bottom: 15px solid transparent;
+    border-left: 140px solid transparent;
+    border-right: 140px solid #d6d6d6;
+}
+.aside .user h1{
+    font-size: 40px;
+}
+
+.aside .user h1::after{
+    content: '';
+    display: block;
+    width: 80px;
+    border-top: 1px solid #d6d6d6;
+    margin: 16px auto;
+}
+
+.aside .contact{
+    padding: 20px;
+}
+
+.aside .contact li{
+    list-style: none;
+    border-bottom: 1px solid #d6d6d6;
+    line-height: 40px;
+}
+
+.aside .contact .iconfont{
+    border-right: 1px solid #d6d6d6;
+    padding-right: 10px;
+    margin-right: 10px;
+    color: rgb(3,200,212);
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.aside .skills{
+    background: rgb(28,142,251);
+    padding: 20px;
+    color: #ffffff;
+}
+
+.aside .skills dt{
+    color: #eee;
+    margin-top: 10px;
+}
+
+.aside .skills dd{
+    height: 4px;
+    background: #74c5b5;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+.aside .skills .mastery{
+    height: 4px;
+    background: #ffffff;
+    display: block;
+}
+
+.aside .other h2{
+    margin: 20px 0 0 20px;
+}
+
+.main{
+    margin-left: 280px;
+    background: #fff;
+    padding: 40px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.main .intro{
+    overflow: auto;
+}
+
+.main .intro img{
+    width: auto;
+    height: 150px;
+    float: left;
+}
+
+.main .intro p{
+    margin-left: 120px;
+}
+
+.main .education h2{
+    font-size: 40px;
+    color: #d9d9d9;
+    text-align: center;
+}
+
+.main .education h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.main .education li{
+    margin-left: 20px;
+}
+
+.projects{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.project-h3{
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.projects .detailedness .main-body,.projects .detailedness .look{
+    font-weight: normal;
+}
+
+.projects .detailedness .look{
+    color: blue;
+    text-decoration: underline;
+}
+
+.myself{
+    margin-left: 160px;
+}
